@@ -44,6 +44,7 @@ agent = create_deep_agent(
     model=llm,
     system_prompt=SYSTEM_PROMPT,
     memory=[str(Path(__file__).parent / "AGENTS.md")],
+    backend=FilesystemBackend(root_dir=str(Path(__file__).parent)),
     # The github-review skill is loaded on demand — not injected upfront.
     skills=[str(Path(__file__).parent / "skills" / "github-review"),
     str(Path(__file__).parent / "skills" / "python-review"),
