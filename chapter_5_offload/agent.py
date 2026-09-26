@@ -100,7 +100,7 @@ agent = create_deep_agent(
     model=llm,
     system_prompt=SYSTEM_PROMPT + REVIEW_STRATEGY,
     memory=[str(HERE / "AGENTS.md")],
-    skills=[str(HERE / "skills" / "github-review")],
+    skills=[str(Path(__file__).parent / "skills")],
     middleware=[pr_context_prompt],
     # FilesystemBackend gives the agent a scratch-pad for per-file notes.
     backend=FilesystemBackend(root_dir=str(HERE), virtual_mode=True),

@@ -81,7 +81,7 @@ agent = create_deep_agent(
     system_prompt=SYSTEM_PROMPT,
     memory=[str(Path(__file__).parent / "AGENTS.md")],
     backend=FilesystemBackend(root_dir=str(Path(__file__).parent)),
-    skills=[str(Path(__file__).parent / "skills" / "github-review")],
+    skills=[str(Path(__file__).parent / "skills")],
     middleware=[pr_context_prompt],
 )
 
