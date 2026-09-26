@@ -1,13 +1,3 @@
-"""
-Chapter 0: DeepAgent Basics
-============================
-The simplest possible deep agent — no system prompt, no tools, no memory.
-Just a model that reasons about a GitHub issue.
-
-Concept: What is a deep agent? It's a model that can plan and act over
-multiple steps. Even without tools, it reasons more deeply than a single LLM call.
-"""
-
 from deepagents import create_deep_agent
 from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv

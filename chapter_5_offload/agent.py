@@ -19,6 +19,7 @@ from dotenv import load_dotenv
 
 import sys
 sys.path.insert(0, str(Path(__file__).parent))
+# pyrefly: ignore [missing-import]
 from example import SAMPLE_PR_DIFF  # Large multi-file PR diff (in same directory)
 
 load_dotenv()

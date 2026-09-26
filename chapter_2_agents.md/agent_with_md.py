@@ -11,6 +11,7 @@ that persists across all invocations by being loaded into the system prompt.
 
 from pathlib import Path
 from deepagents import create_deep_agent
+from deepagents.backends import FilesystemBackend
 from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv
 

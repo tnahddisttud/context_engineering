@@ -10,6 +10,7 @@ on the fly — without the caller needing to know anything about prompt logic.
 
 from pathlib import Path
 from deepagents import create_deep_agent
+from deepagents.backends import FilesystemBackend
 from langchain.agents.middleware import dynamic_prompt
 from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv

@@ -12,6 +12,7 @@ or issue-triage contexts with review-specific instructions.
 
 from pathlib import Path
 from deepagents import create_deep_agent
+from deepagents.backends import FilesystemBackend
 from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv
 
